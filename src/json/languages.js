@@ -1,0 +1,48 @@
+let languageData = {
+  español: {
+    title: "Bienvenid@",
+    footer: "footer",
+    header1: "Si buscas un desarrollador que te ayude con:",
+    subheader1: "Desarrollo web",
+    subheader2: "Ciencia de datos",
+    subheader3: "Diseño IoT",
+    subheader4: "Seguridad I.T.",
+    headerEnd: "Estas en el lugar indicado!",
+    header2: "Mi portafolio",
+    header2b: "Si deseas revisar mi portafolio, haz click",
+    header2c: "aquí",
+    header3: "CV y Redes",
+    header4: "Contáctame",
+    header4a: "Tu nombre",
+    header4b: "Tu correo",
+    header4c: "Tu mensaje",
+    header4d: "Escribe tu mensaje aquí",
+    header4e: "Enviar!",
+    portafolioTitle: "Muestras de mi trabajo",
+    header5: "Sobre mi"
+  },
+  english: {
+    title: "Welcome",
+    footer: "footer",
+    header1: "If you are seeking a developer that can help you with:",
+    subheader1: "Web Dev",
+    subheader2: "Data Science",
+    subheader3: "IoT Design",
+    subheader4: "I.T. Security",
+    headerEnd: "You have come to the right place",
+    header2: "My portfolio",
+    header2b: "If you wish to check my portfolio please click",
+    header2c: "here",
+    header3: "CV and Social Media",
+    header4: "Contact me",
+    header4a: "Your name",
+    header4b: "Your email",
+    header4c: "Your message",
+    header4d: "Write your message here",
+    header4e: "Send!",
+    portafolioTitle: "Some of my Work",
+    header5: "About me"
+  },
+}
+
+export default languageData

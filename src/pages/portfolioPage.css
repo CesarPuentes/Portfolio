@@ -1,0 +1,41 @@
+.border {
+    border: 5px solid #1C6EA4;
+    border-radius: 10px 10px 10px 10px;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.insideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.insideButton{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.images{
+    height: auto;
+    width: 1000px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "." "." "." "." "." "." ".";
+        background-color: black;
+      }
+}
