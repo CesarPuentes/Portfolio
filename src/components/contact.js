@@ -13,7 +13,7 @@ import * as emailjs from "emailjs-com"
 
 const useStyles = makeStyles(theme => ({
   margin: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(0),
   },
 }))
 
@@ -54,7 +54,7 @@ export default function Contact({ jsonData }) {
 
   return (
     <div>
-      <Grid container spacing={3}>
+      <Grid container>
         <Grid item xs={12}>
           <h1>{jsonData.header4}</h1>
           <FormControl className={classes.margin}>
@@ -89,6 +89,7 @@ export default function Contact({ jsonData }) {
         </Grid>
 
         <Grid item xs={12}>
+        <br/>
           <TextField
             id="outlined-multiline-static"
             label={jsonData.header4c}
@@ -99,7 +100,9 @@ export default function Contact({ jsonData }) {
             value={message}
           />
         </Grid>
+        
         <Grid item xs={12}>
+        <br/>
           <Button
             variant="outlined"
             component="span"

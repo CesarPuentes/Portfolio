@@ -13,7 +13,7 @@ import { GlobalStateContext } from "../context/GlobalContextProvider"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/portfolioCard.css"
+import "../components/css/portfolioCard.css"
 import "./portfolioPage.css"
 
 const useStyles = makeStyles(theme => ({

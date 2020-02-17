@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid"
 import WorkIcon from "@material-ui/icons/Work"
 import { Link } from "gatsby"
 
-import "./portfolioCard.css"
+import "./css/portfolioCard.css"
 
 const useStyles = makeStyles(theme => ({
   root: {

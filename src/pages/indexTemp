@@ -1,0 +1,71 @@
+import React, { useContext } from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import Paper from "@material-ui/core/Paper"
+import Grid from "@material-ui/core/Grid"
+import Example from "./../components/deEncryptEffect"
+
+import { GlobalStateContext } from "../context/GlobalContextProvider"
+import languageData from "../json/languages"
+
+import WelcomeSection from "../components/welcome_section"
+import CvRedes from "../components/cvredes"
+import Contact from "../components/contact"
+import PortfolioCard from "../components/portfolioCard"
+
+import "./index.css"
+
+import Layout from "../components/layout"
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+  },
+}))
+
+function IndexPage() {
+  const classes = useStyles()
+  const state = useContext(GlobalStateContext)
+  return (
+    <Layout
+      titulo={languageData[state.language].title}
+      footer={languageData[state.language].footer}
+      jsonData={languageData[state.language]}
+      cvData={languageData[state.language].cvLink}
+      cvTitle={languageData[state.language].header3b}
+      portafolioTitle={languageData[state.language].header2}
+    >
+      <div className={classes.root}>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <Example jsonData={languageData[state.language]} />
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <WelcomeSection jsonData={languageData[state.language]} />
+          </Grid>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <PortfolioCard jsonData={languageData[state.language]} />
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <CvRedes jsonData={languageData[state.language]} />
+          </Grid>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <Contact jsonData={languageData[state.language]} />
+            </Paper>
+          </Grid>
+        </Grid>
+      </div>
+    </Layout>
+  )
+}
+
+export default IndexPage

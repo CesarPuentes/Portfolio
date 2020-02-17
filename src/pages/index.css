@@ -1,30 +1,279 @@
-body{
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1)
-  ),url(../Assets/Images/BackGround.png)
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .landing{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
 
-.example{
-  background-color: white;
-}
+  .portraitBox{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./../Assets/Images/pexels-photo-546819.jpeg');
+  }
 
-.ml6 {
-    position: relative;
-    font-weight: 900;
-    font-size: 3.3em;
+  .section1 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
+  }
+
+  .subSection1{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .subSection1:hover{
+    background-color:rgb(151, 34, 25);
   }
   
-  .ml6 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
+  .section2 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
   }
   
-  .ml6 .letter {
-    display: inline-block;
-    line-height: 1em;
+  .section3 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
   }
+
+  .mailSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .landing{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .portraitBox{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./../Assets/Images/pexels-photo-546819.jpeg');
+  }
+
+  .section1 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
+  }
+
+  .subSection1{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .subSection1:hover{
+    background-color:rgb(151, 34, 25);
+  }
+  
+  .section2 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
+  }
+  
+  .section3 { 
+    width: 100%;
+    height: 150px;
+    background-color: #1E2630;
+  }
+
+  .mailSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .landing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .portraitBox{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./../Assets/Images/pexels-photo-546819.jpeg');
+  }
+
+  .section1 { 
+    grid-column-start: 1; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .subSection1{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .subSection1:hover{
+    background-color:rgb(151, 34, 25);
+  }
+  
+  .section2 { 
+    grid-column-start: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    background-color: #1E2630;
+    height: 100%;
+  }
+  
+  .section3 { 
+    grid-column-start: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .mailSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .landing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .portraitBox{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./../Assets/Images/pexels-photo-546819.jpeg');
+  }
+
+  .section1 { 
+    grid-column-start: 1; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .subSection1{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .subSection1:hover{
+    background-color:rgb(151, 34, 25);
+  }
+  
+  .section2 { 
+    grid-column-start: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    background-color: #1E2630;
+    height: 100%;
+  }
+  
+  .section3 { 
+    grid-column-start: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .mailSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .landing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .portraitBox{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./../Assets/Images/pexels-photo-546819.jpeg');
+  }
+
+  .section1 { 
+    grid-column-start: 1; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .subSection1{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .subSection1:hover{
+    background-color:rgb(151, 34, 25);
+  }
+  
+  .section2 { 
+    grid-column-start: 2; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    background-color: #1E2630;
+    height: 100%;
+  }
+  
+  .section3 { 
+    grid-column-start: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    height: 100%;
+    background-color: #1E2630;
+  }
+
+  .mailSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+}

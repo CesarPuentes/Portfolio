@@ -22,7 +22,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     marginBottom: "20px",
-    minWidth: 270
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -76,6 +75,16 @@ export default function Header({
             </Link>
           </IconButton>
 
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+          >
+            <a href={cvLink}>
+              <div className="cvLetter">CV</div>
+            </a>
+          </IconButton>
 
           <IconButton
             edge="start"

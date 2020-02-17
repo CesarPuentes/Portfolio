@@ -8,21 +8,24 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import DescriptionIcon from "@material-ui/icons/Description"
 import { Link } from "gatsby"
 
-import "./cv.css"
+import "./css/cv.css"
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary,
+    color: "white",
+    backgroundColor: "black",
   },
   icon: {
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+    color: "white",
     width: "50%",
     "&:hover": {
       color: "gold",
@@ -35,7 +38,7 @@ export default function CvRedes({ jsonData }) {
   const state = useContext(GlobalStateContext)
 
   return (
-    <div>
+    <div className="mainContainer">
       <Paper className={classes.paper}>
         <Grid container spacing={3}>
           <Grid item xs={12}>

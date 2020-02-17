@@ -12,6 +12,7 @@ let languageData = {
     header2b: "Si deseas revisar mi portafolio, haz click",
     header2c: "aquí",
     header3: "CV y Redes",
+    header3b: "Mi CV",
     header4: "Contáctame",
     header4a: "Tu nombre",
     header4b: "Tu correo",
@@ -19,7 +20,8 @@ let languageData = {
     header4d: "Escribe tu mensaje aquí",
     header4e: "Enviar!",
     portafolioTitle: "Muestras de mi trabajo",
-    header5: "Sobre mi"
+    header5: "Sobre mi",
+    cvLink: "https://docdro.id/5wGkK7e",
   },
   english: {
     title: "Welcome",
@@ -34,6 +36,7 @@ let languageData = {
     header2b: "If you wish to check my portfolio please click",
     header2c: "here",
     header3: "CV and Social Media",
+    header3b: "My CV",
     header4: "Contact me",
     header4a: "Your name",
     header4b: "Your email",
@@ -41,7 +44,8 @@ let languageData = {
     header4d: "Write your message here",
     header4e: "Send!",
     portafolioTitle: "Some of my Work",
-    header5: "About me"
+    header5: "About me",
+    cvLink: "https://docdro.id/FtPjQVY",
   },
 }
 

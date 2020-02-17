@@ -7,7 +7,7 @@ import FormatShapes from "@material-ui/icons/FormatShapes"
 import CloudQueue from "@material-ui/icons/CloudQueue"
 import Code from "@material-ui/icons/Code"
 
-import "./welcome.css"
+import "./css/welcome.css"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -16,11 +16,15 @@ const useStyles = makeStyles(theme => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary,
+    color: "black"
+
   },
   iconAlign: {
     marginLeft: "50%",
   },
+  iconColor:{
+    color: "#DF3D30"
+  }
 }))
 
 export default function WelcomeSection({ jsonData }) {
@@ -38,7 +42,7 @@ export default function WelcomeSection({ jsonData }) {
           <div className="welcomeBoxItem">
             <div className="welcomeBoxItemInside">
               <div>
-                <Code />
+                <Code className={classes.iconColor} />
               </div>
               <h3>{jsonData.subheader1}</h3>
             </div>
@@ -46,7 +50,7 @@ export default function WelcomeSection({ jsonData }) {
           <div className="welcomeBoxItem">
             <div className="welcomeBoxItemInside">
               <div>
-                <FormatShapes />
+                <FormatShapes className={classes.iconColor} />
               </div>
               <h3>{jsonData.subheader2}</h3>
             </div>
@@ -54,7 +58,7 @@ export default function WelcomeSection({ jsonData }) {
           <div className="welcomeBoxItem">
             <div className="welcomeBoxItemInside">
               <div>
-                <CloudQueue />
+                <CloudQueue className={classes.iconColor} />
               </div>
               <h3>{jsonData.subheader3}</h3>
             </div>
@@ -62,7 +66,7 @@ export default function WelcomeSection({ jsonData }) {
           <div className="welcomeBoxItem">
             <div className="welcomeBoxItemInside">
               <div>
-                <LanguageIcon />
+                <LanguageIcon className={classes.iconColor} />
               </div>
               <h3>{jsonData.subheader4}</h3>
             </div>

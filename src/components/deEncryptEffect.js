@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import { useDencrypt } from "use-dencrypt-effect"
-import "./styles.css"
+import "./css/styles.css"
 
-const values = ["Cesar Puentes", "Web Developer", "Fullstack"]
+const values = ["Programmer", "Web Developer", "Fullstack"]
 
 const Example = ({ jsonData }) => {
   const { result, dencrypt } = useDencrypt()
