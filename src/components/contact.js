@@ -53,7 +53,7 @@ export default function Contact({ jsonData }) {
   }
 
   return (
-    <div>
+    <div id="seccion_contacto">
       <Grid container>
         <Grid item xs={12}>
           <h1>{jsonData.header4}</h1>

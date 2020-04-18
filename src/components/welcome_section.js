@@ -32,6 +32,7 @@ export default function WelcomeSection({ jsonData }) {
 
   return (
     <div>
+      {/* Sección "Si buscas un desarrollador que te ayude con ... "  */}
       <Paper className={classes.paper}>
         <Grid container spacing={3}>
           <Grid item xs={12}>

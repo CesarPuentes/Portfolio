@@ -59,6 +59,7 @@ export default function Header({
 
   return (
     <div className={classes.root}>
+      {/* Este es el menú desplegable de la barra header */}
       <AppBar className={classes.appBarColor} position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
@@ -105,10 +106,10 @@ export default function Header({
           >
             <MenuItem onClick={handleClose}>Home</MenuItem>
             <MenuItem onClick={handleClose}>
-              <a href={cvLink}>{cvTitles}</a>
+              <a className="noUnderscore" href={cvLink}>{cvTitles}</a>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <Link to="/portfolioPage">{portafolioTitles}</Link>
+              <Link className="noUnderscore" to="/portfolioPage">{portafolioTitles}</Link>
             </MenuItem>
           </Menu>
         </Toolbar>

@@ -4,13 +4,9 @@ import Example from "./../components/deEncryptEffect"
 import { GlobalStateContext } from "../context/GlobalContextProvider"
 import languageData from "../json/languages"
 
-import Paper from "@material-ui/core/Paper"
-import Grid from "@material-ui/core/Grid"
-
 import WelcomeSection from "../components/welcome_section"
 import CvRedes from "../components/cvredes"
 import Contact from "../components/contact"
-import PortfolioCard from "../components/portfolioCard"
 
 import ComputerIcon from "@material-ui/icons/Computer"
 import AccountCircleIcon from "@material-ui/icons/AccountCircle"
@@ -55,8 +51,10 @@ const useStyles = makeStyles(theme => ({
 function IndexPage() {
   const classes = useStyles()
   const state = useContext(GlobalStateContext)
+  let mylang = state.language
   return (
     <div className={classes.root}>
+      {/* Esta es la sección inicial, justo debajo de la navbar */}
       <Layout
         titulo={languageData[state.language].title}
         footer={languageData[state.language].footer}
@@ -65,6 +63,13 @@ function IndexPage() {
         cvTitle={languageData[state.language].header3b}
         portafolioTitle={languageData[state.language].header2}
       >
+        {/* Desde context se trae el estado 'state' para realizar los cambios de idioma en esta página */}
+        {console.log("#############")}
+        {console.log(languageData)}
+        {console.log(state)}
+        {console.log(state.language)}
+        {console.log("#############")}
+
         <div className="landing">
           <div className="portraitBox">
             <div className={classes.textStyle}>
@@ -77,24 +82,30 @@ function IndexPage() {
                 Programador con experiencia en desarrollo web y ciencia de datos
               </h2>
             </div>
-          </div>
+          </div>    
           <div className="section1">
+          <a href={languageData[mylang].cvLink} className="noUnderscore">
             <div className="subSection1">
               <AccountCircleIcon className={classes.landingIcon} />
               <h3 className={classes.textStyle}>Consulta mi CV</h3>
             </div>
-          </div>
+            </a>
+          </div>         
           <div className="section2">
+          <a href={"/portfolioPage"} className="noUnderscore">
             <div className="subSection1">
               <WorkIcon className={classes.landingIcon} />
               <h3 className={classes.textStyle}>Visita mi portafolio</h3>
             </div>
+           </a>
           </div>
           <div className="section3">
+          <a href="#seccion_contacto" className="noUnderscore">
             <div className="subSection1">
               <MailOutlineIcon className={classes.landingIcon} />
               <h3 className={classes.textStyle}>Contacta conmigo</h3>
             </div>
+            </a>
           </div>
         </div>
 

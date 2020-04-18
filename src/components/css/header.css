@@ -1,3 +1,8 @@
 .cvLetter{
     color: white;
 }
+
+.noUnderscore{
+    text-decoration: none;
+  }
+  

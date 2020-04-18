@@ -55,7 +55,7 @@ export default function CvRedes({ jsonData }) {
           <a href="https://www.linkedin.com/in/c%C3%A9sar-david-p-510238a1/">
             <LinkedInIcon className={classes.icon} />
           </a>
-          <a href="https://www.docdroid.net/hCcELu9/res5.pdf">
+          <a href="">
             <DescriptionIcon className={classes.icon} />
           </a>
         </div>

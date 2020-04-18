@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    marginBottom: "20px",
+    marginBottom: "20px"
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -15,13 +15,16 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+  appBarColor: {
+    backgroundColor: "#1E2630",
+  }
 }))
 
 export default function Footer({ titulo }) {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.appBarColor} position="static">
         <Toolbar></Toolbar>
       </AppBar>
     </div>

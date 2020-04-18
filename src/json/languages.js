@@ -21,7 +21,7 @@ let languageData = {
     header4e: "Enviar!",
     portafolioTitle: "Muestras de mi trabajo",
     header5: "Sobre mi",
-    cvLink: "https://docdro.id/5wGkK7e",
+    cvLink: "https://docdro.id/RJvDaJP",
   },
   english: {
     title: "Welcome",
@@ -45,7 +45,7 @@ let languageData = {
     header4e: "Send!",
     portafolioTitle: "Some of my Work",
     header5: "About me",
-    cvLink: "https://docdro.id/FtPjQVY",
+    cvLink: "https://docdro.id/pEANg9u",
   },
 }
 
